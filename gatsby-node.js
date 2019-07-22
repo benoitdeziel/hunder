@@ -2,29 +2,29 @@
 
 const path = require('path');
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  return graphql(`
+  const pages = await graphql(`
     {
       allShopifyProduct {
         edges {
           node {
+            id
             handle
           }
         }
       }
     }
-  `).then(result => {
-    result.data.allShopifyProduct.edges.forEach(({ node }) => {
-      createPage({
-        path: `/product/${node.handle}/`,
-        component: path.resolve('./src/templates/ProductPage/index.jsx'),
-        context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
-          handle: node.handle,
-        },
-      });
+  `);
+
+  pages.data.allShopifyProduct.edges.forEach(({ node }) => {
+    createPage({
+      path: `/product/${node.handle}/`,
+      component: path.resolve('./src/templates/ProductPage/index.jsx'),
+      context: {
+        id: node.id,
+        handle: node.handle,
+      },
     });
   });
 };
