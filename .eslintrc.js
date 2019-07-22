@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:jsx-a11y/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -20,7 +20,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks', 'jsx-a11y'],
   rules: {
     'jsx-a11y/label-has-for': 0,
   },
