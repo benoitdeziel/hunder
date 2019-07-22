@@ -37,10 +37,10 @@ export const Container = props => (
     {...props}
     mx="auto"
     flexDirection="column"
-    px={[`1.0875rem`, null, null, 0]}
+    px={['1.0875rem', null, null, 0]}
     py="1.45rem"
     css={{
-      margin: `0 auto`,
+      margin: '0 auto',
       maxWidth: 960,
     }}
   />
