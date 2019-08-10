@@ -22,7 +22,7 @@
     "gatsby-plugin-sharp": "^2.2.8",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-source-shopify": "^2.2.2",
-    "gatsby-transformer-sharp": "^2.2.4",
+    "gatsby-transformer-sharp": "^2.2.6",
     "js-yaml": "^3.13.1",
     "prop-types": "^15.6.2",
     "querystringify": "2.1.1",
