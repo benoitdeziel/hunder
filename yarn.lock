@@ -10920,10 +10920,10 @@ shell-quote@1.6.1:
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
 
-shopify-buy@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/shopify-buy/-/shopify-buy-2.6.1.tgz#c6b7996dff98899c6f7e28151a5be701d4978884"
-  integrity sha512-eYC9nMxTdgN0qJ3VQOzec3i3NuOZwujkqv4wb75XVDtwiV5OzXUgdyxra/f9T1G7il/LWAIY4GvNkfS2PJQlLg==
+shopify-buy@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/shopify-buy/-/shopify-buy-2.8.0.tgz#3a170d9d53d5cc2553bb6b04dd423071b1750236"
+  integrity sha512-9Ta66XFndZgmlgqL6L7102jozkGch35PNrhpcO6rBzJO83VbgUZxT++PwuGHfSF1uKI6v8QLwnWKf03Z7RslIQ==
 
 sift@^5.1.0:
   version "5.1.0"
